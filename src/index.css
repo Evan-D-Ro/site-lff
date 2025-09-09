@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design system inspirado na fachada da instituição - cores acolhedoras e infantis
+Todas as cores DEVEM ser HSL para garantir consistência
+*/
+
+@layer base {
+  :root {
+    --background: 210 50% 80%;
+    --foreground: 220 15% 25%;
+
+    --card: 210 50% 90%;
+    --card-foreground: 220 15% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 25%;
+
+    --primary: 212 85% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 212 70% 35%;
+
+    --secondary: 45 35% 85%;
+    --secondary-foreground: 220 15% 25%;
+
+    --muted: 48 15% 92%;
+    --muted-foreground: 220 10% 20%;
+
+    --accent: 45 40% 88%;
+    --accent-foreground: 220 15% 25%;
+
+    --warm: 35 45% 80%;
+    --warm-foreground: 220 15% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 45 20% 88%;
+    --input: 45 20% 88%;
+    --ring: 212 85% 45%;
+
+    /* Gradientes acolhedores */
+    --gradient-hero: linear-gradient(135deg, hsl(212 85% 25%), hsl(212 70% 32%));
+    --gradient-warm: linear-gradient(135deg, hsl(45 35% 85%), hsl(48 20% 96%));
+    --gradient-accent: linear-gradient(45deg, hsl(45 40% 88%), hsl(35 45% 80%));
+
+    /* Sombras suaves */
+    --shadow-soft: 0 4px 20px hsl(212 85% 45% / 0.1);
+    --shadow-warm: 0 8px 30px hsl(45 35% 85% / 0.3);
+
+    /* Animações */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 15% 10%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 15% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 15% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 212 85% 55%;
+    --primary-foreground: 220 15% 10%;
+    --primary-glow: 212 70% 65%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
