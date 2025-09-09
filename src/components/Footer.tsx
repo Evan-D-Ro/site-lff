@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-3 mb-4">
               <div className="w-10 h-10 bg-[var(--gradient-hero)] rounded-full flex items-center justify-center">
-                <img src="/logo.png" className="h-14 w-12 text-primary" />
+                <img src="logo.png" className="h-14 w-12 text-primary" />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-primary">Lar Francisco Franco</h3>

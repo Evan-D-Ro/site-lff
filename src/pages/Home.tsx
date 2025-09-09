@@ -14,7 +14,7 @@ const Home = () => {
               <div className="container mx-auto">
                 <div className="max-w-4xl mx-auto">
                   <img
-                    src="/lovable-uploads/cc725601-fb09-4024-a5cb-406f08a68f8e.png"
+                    src="fachada.png"
                     alt="Fachada do Lar Francisco Franco - Casa das Meninas"
                     className="w-full h-56 md:h-64 object-cover rounded-2xl shadow-[var(--shadow-warm)]"
                   />
